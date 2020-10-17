@@ -1,11 +1,13 @@
 # Here is the sample code for send_keys and saving a screenshot
+# Adding more optimised code
 
 require 'rubygems'
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
+URL = 'https://stackoverflow.com/questions/10040953/press-tab-and-then-enter-key-in-selenium-webdriver-with-ruby'
 
-driver.get 'https://stackoverflow.com/questions/10040953/press-tab-and-then-enter-key-in-selenium-webdriver-with-ruby'
+driver.get URL
 
 driver.save_screenshot("screenshot.png")
 element = driver.find_element(:id, 'top-search').click
