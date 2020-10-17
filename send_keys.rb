@@ -16,7 +16,11 @@ driver.save_screenshot(SCREENSHOT_NAME) # Making global variable for saving the 
 element = driver.find_element(:id, SEARCH).click
 
 element.send_keys(TYPE_LETTERS)
+
 element.send_keys(:enter) # This can be avoided
+
+element.send_keys(:enter) # This enter can be added in a more optimised way, simply by adding a number or symbol
+
 
 sleep(4)
 
