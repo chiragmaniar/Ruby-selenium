@@ -22,6 +22,6 @@ element.send_keys(:enter) # This can be avoided
 element.send_keys(:enter) # This enter can be added in a more optimised way, simply by adding a number or symbol
 
 
-sleep(4)
+sleep(4) # Added sleep here just to see the automation, else can be avoided
 
 driver.quit
