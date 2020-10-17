@@ -8,13 +8,14 @@ driver = Selenium::WebDriver.for :chrome
 URL = 'https://stackoverflow.com/questions/10040953/press-tab-and-then-enter-key-in-selenium-webdriver-with-ruby'
 SCREENSHOT_NAME = 'screenshot.png'
 SEARCH = 'top-search'
+TYPE_LETTERS = 'thesearesomelettersforsendkeys'
 
 driver.get URL
 
 driver.save_screenshot(SCREENSHOT_NAME) # Making global variable for saving the screenshot name
 element = driver.find_element(:id, SEARCH).click
 
-element.send_keys('ckm')
+element.send_keys(TYPE_LETTERS)
 element.send_keys(:enter)
 
 sleep(4)
