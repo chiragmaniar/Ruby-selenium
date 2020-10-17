@@ -16,7 +16,7 @@ driver.save_screenshot(SCREENSHOT_NAME) # Making global variable for saving the 
 element = driver.find_element(:id, SEARCH).click
 
 element.send_keys(TYPE_LETTERS)
-element.send_keys(:enter)
+element.send_keys(:enter) # This can be avoided
 
 sleep(4)
 
