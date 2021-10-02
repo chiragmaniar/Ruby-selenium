@@ -1,7 +1,8 @@
+# frozen_string_literal: true
+
 # Here is the sample code for send_keys and saving a screenshot
 # Adding more optimised code
 
-require 'rubygems'
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
@@ -20,7 +21,6 @@ element.send_keys(TYPE_LETTERS)
 element.send_keys(:enter) # This can be avoided
 
 element.send_keys(:enter) # This enter can be added in a more optimised way, simply by adding a number or symbol
-
 
 sleep(4) # Added sleep here just to see the automation, else can be avoided
 
