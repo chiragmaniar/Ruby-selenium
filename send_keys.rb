@@ -7,6 +7,10 @@ require 'rubygems'
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
+driverFirefox = Selenium::WebDriver.for :firefox # Added driver for firefox
+
+driver = driver;
+
 URL = 'https://stackoverflow.com/questions/10040953/press-tab-and-then-enter-key-in-selenium-webdriver-with-ruby'
 SCREENSHOT_NAME = 'screenshot.png'
 SEARCH = 'top-search'
