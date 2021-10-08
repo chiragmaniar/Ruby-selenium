@@ -1,2 +1,2 @@
 # Ruby-selenium
-Selenium automation using Ruby
+Selenium automation using Ruby Language
