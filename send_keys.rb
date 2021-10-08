@@ -15,7 +15,8 @@ TYPE_LETTERS = 'thesearesomelettersforsendkeys'
 driver.get URL
 
 driver.save_screenshot(SCREENSHOT_NAME) # Making global variable for saving the screenshot name
-element = driver.find_element(:id, SEARCH).click
+element = driver.find_element(:id, SEARCH)
+element.click
 
 element.send_keys(TYPE_LETTERS)
 
