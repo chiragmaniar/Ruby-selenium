@@ -2,7 +2,8 @@
 
 # Here is the sample code for send_keys and saving a screenshot
 # Adding more optimised code
-
+# Ruby 1.9 and newer ship with RubyGems built-in, so there is no real need to require 'rubygems'
+require 'rubygems'
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
