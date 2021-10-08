@@ -30,6 +30,6 @@ element.send_keys(:enter) # This can be avoided
 
 element.send_keys(:enter) # This enter can be added in a more optimised way, simply by adding a number or symbol
 
-sleep(4) # Added sleep here just to see the automation, else can be avoided
+wait = Selenium::WebDriver::Wait.new(:timeout => 5) # Added wait here to replicate real scenario of searching in stackoverflow
 
 driver.quit
