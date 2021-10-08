@@ -8,6 +8,7 @@ require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
 driverFirefox = Selenium::WebDriver.for :firefox # Added driver for firefox
+driverSafari = Selenium::WebDriver.for :safari # Added driver for safari
 
 driver = driver;
 
