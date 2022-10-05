@@ -4,6 +4,7 @@ require 'rubygems'
 require 'selenium-webdriver'
 
 driver = Selenium::WebDriver.for :chrome
+driver = Selenium::WebDriver.for :fireforx
 
 driver.get 'https://stackoverflow.com/questions/10040953/press-tab-and-then-enter-key-in-selenium-webdriver-with-ruby'
 
